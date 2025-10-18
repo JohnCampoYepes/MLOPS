@@ -1,14 +1,8 @@
-# ======= VARIABLES =======
-#USER_NAME ?= "usuario"
-#USER_EMAIL ?= "correo@dominio.com"
-#HF ?= "tu_token_aqui"
-
 install:
 py -m pip install --upgrade pip &&\
 py -m pip install -r requirements.txt
 
 format:
-#py -m black . exclude venv || true
 py -m black *.py
 
 train:
